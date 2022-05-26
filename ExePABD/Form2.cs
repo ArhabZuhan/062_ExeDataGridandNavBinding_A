@@ -34,7 +34,7 @@ namespace ExePABD
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 f4 = new Form4();
+            Form4 f4 = new Form4();
             f4.Show();
         }
     }

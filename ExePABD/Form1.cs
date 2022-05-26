@@ -25,7 +25,7 @@ namespace ExePABD
                 Form2 f2 = new Form2();
                 f2.Show();
             }
-            else
+            else if (textBoxUsername.Text == "admin" && textBoxPassword.Text == "admin123" && checkBox1.Checked)
             {
                 MessageBox.Show("Username/Password Salah Ulangi lagii");
             }
@@ -33,7 +33,6 @@ namespace ExePABD
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
         }
 
         private void button2_Click(object sender, EventArgs e)

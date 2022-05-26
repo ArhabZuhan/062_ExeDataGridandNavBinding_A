@@ -30,28 +30,28 @@ namespace ExePABD
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             System.Windows.Forms.Label nIMLabel;
             System.Windows.Forms.Label namaMhsLabel;
             System.Windows.Forms.Label alamatMhsLabel;
             System.Windows.Forms.Label sexLabel;
             System.Windows.Forms.Label phoneMhsLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.prodiTIDataSet = new ExePABD.ProdiTIDataSet();
             this.mahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mahasiswaTableAdapter = new ExePABD.ProdiTIDataSetTableAdapters.MahasiswaTableAdapter();
             this.tableAdapterManager = new ExePABD.ProdiTIDataSetTableAdapters.TableAdapterManager();
             this.mahasiswaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.mahasiswaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.nIMTextBox = new System.Windows.Forms.TextBox();
             this.namaMhsTextBox = new System.Windows.Forms.TextBox();
@@ -59,6 +59,7 @@ namespace ExePABD
             this.sexTextBox = new System.Windows.Forms.TextBox();
             this.phoneMhsTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             nIMLabel = new System.Windows.Forms.Label();
             namaMhsLabel = new System.Windows.Forms.Label();
             alamatMhsLabel = new System.Windows.Forms.Label();
@@ -68,7 +69,53 @@ namespace ExePABD
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingNavigator)).BeginInit();
             this.mahasiswaBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // nIMLabel
+            // 
+            nIMLabel.AutoSize = true;
+            nIMLabel.Location = new System.Drawing.Point(276, 119);
+            nIMLabel.Name = "nIMLabel";
+            nIMLabel.Size = new System.Drawing.Size(36, 17);
+            nIMLabel.TabIndex = 1;
+            nIMLabel.Text = "NIM:";
+            // 
+            // namaMhsLabel
+            // 
+            namaMhsLabel.AutoSize = true;
+            namaMhsLabel.Location = new System.Drawing.Point(276, 147);
+            namaMhsLabel.Name = "namaMhsLabel";
+            namaMhsLabel.Size = new System.Drawing.Size(79, 17);
+            namaMhsLabel.TabIndex = 3;
+            namaMhsLabel.Text = "Nama Mhs:";
+            // 
+            // alamatMhsLabel
+            // 
+            alamatMhsLabel.AutoSize = true;
+            alamatMhsLabel.Location = new System.Drawing.Point(276, 175);
+            alamatMhsLabel.Name = "alamatMhsLabel";
+            alamatMhsLabel.Size = new System.Drawing.Size(85, 17);
+            alamatMhsLabel.TabIndex = 5;
+            alamatMhsLabel.Text = "Alamat Mhs:";
+            // 
+            // sexLabel
+            // 
+            sexLabel.AutoSize = true;
+            sexLabel.Location = new System.Drawing.Point(276, 203);
+            sexLabel.Name = "sexLabel";
+            sexLabel.Size = new System.Drawing.Size(35, 17);
+            sexLabel.TabIndex = 7;
+            sexLabel.Text = "Sex:";
+            // 
+            // phoneMhsLabel
+            // 
+            phoneMhsLabel.AutoSize = true;
+            phoneMhsLabel.Location = new System.Drawing.Point(276, 231);
+            phoneMhsLabel.Name = "phoneMhsLabel";
+            phoneMhsLabel.Size = new System.Drawing.Size(83, 17);
+            phoneMhsLabel.TabIndex = 9;
+            phoneMhsLabel.Text = "Phone Mhs:";
             // 
             // prodiTIDataSet
             // 
@@ -121,13 +168,38 @@ namespace ExePABD
             this.mahasiswaBindingNavigator.TabIndex = 0;
             this.mahasiswaBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -136,34 +208,28 @@ namespace ExePABD
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 20);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -185,44 +251,17 @@ namespace ExePABD
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // mahasiswaBindingNavigatorSaveItem
             // 
             this.mahasiswaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.mahasiswaBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("mahasiswaBindingNavigatorSaveItem.Image")));
             this.mahasiswaBindingNavigatorSaveItem.Name = "mahasiswaBindingNavigatorSaveItem";
-            this.mahasiswaBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.mahasiswaBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.mahasiswaBindingNavigatorSaveItem.Text = "Save Data";
             this.mahasiswaBindingNavigatorSaveItem.Click += new System.EventHandler(this.mahasiswaBindingNavigatorSaveItem_Click);
-            // 
-            // nIMLabel
-            // 
-            nIMLabel.AutoSize = true;
-            nIMLabel.Location = new System.Drawing.Point(276, 119);
-            nIMLabel.Name = "nIMLabel";
-            nIMLabel.Size = new System.Drawing.Size(36, 17);
-            nIMLabel.TabIndex = 1;
-            nIMLabel.Text = "NIM:";
             // 
             // nIMTextBox
             // 
@@ -232,15 +271,6 @@ namespace ExePABD
             this.nIMTextBox.Size = new System.Drawing.Size(100, 22);
             this.nIMTextBox.TabIndex = 2;
             // 
-            // namaMhsLabel
-            // 
-            namaMhsLabel.AutoSize = true;
-            namaMhsLabel.Location = new System.Drawing.Point(276, 147);
-            namaMhsLabel.Name = "namaMhsLabel";
-            namaMhsLabel.Size = new System.Drawing.Size(79, 17);
-            namaMhsLabel.TabIndex = 3;
-            namaMhsLabel.Text = "Nama Mhs:";
-            // 
             // namaMhsTextBox
             // 
             this.namaMhsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "NamaMhs", true));
@@ -248,15 +278,6 @@ namespace ExePABD
             this.namaMhsTextBox.Name = "namaMhsTextBox";
             this.namaMhsTextBox.Size = new System.Drawing.Size(100, 22);
             this.namaMhsTextBox.TabIndex = 4;
-            // 
-            // alamatMhsLabel
-            // 
-            alamatMhsLabel.AutoSize = true;
-            alamatMhsLabel.Location = new System.Drawing.Point(276, 175);
-            alamatMhsLabel.Name = "alamatMhsLabel";
-            alamatMhsLabel.Size = new System.Drawing.Size(85, 17);
-            alamatMhsLabel.TabIndex = 5;
-            alamatMhsLabel.Text = "Alamat Mhs:";
             // 
             // alamatMhsTextBox
             // 
@@ -266,15 +287,6 @@ namespace ExePABD
             this.alamatMhsTextBox.Size = new System.Drawing.Size(100, 22);
             this.alamatMhsTextBox.TabIndex = 6;
             // 
-            // sexLabel
-            // 
-            sexLabel.AutoSize = true;
-            sexLabel.Location = new System.Drawing.Point(276, 203);
-            sexLabel.Name = "sexLabel";
-            sexLabel.Size = new System.Drawing.Size(35, 17);
-            sexLabel.TabIndex = 7;
-            sexLabel.Text = "Sex:";
-            // 
             // sexTextBox
             // 
             this.sexTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "Sex", true));
@@ -282,15 +294,6 @@ namespace ExePABD
             this.sexTextBox.Name = "sexTextBox";
             this.sexTextBox.Size = new System.Drawing.Size(100, 22);
             this.sexTextBox.TabIndex = 8;
-            // 
-            // phoneMhsLabel
-            // 
-            phoneMhsLabel.AutoSize = true;
-            phoneMhsLabel.Location = new System.Drawing.Point(276, 231);
-            phoneMhsLabel.Name = "phoneMhsLabel";
-            phoneMhsLabel.Size = new System.Drawing.Size(83, 17);
-            phoneMhsLabel.TabIndex = 9;
-            phoneMhsLabel.Text = "Phone Mhs:";
             // 
             // phoneMhsTextBox
             // 
@@ -303,7 +306,7 @@ namespace ExePABD
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Location = new System.Drawing.Point(708, 368);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 70);
@@ -311,11 +314,23 @@ namespace ExePABD
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(126, 66);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(71, 72);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(nIMLabel);
             this.Controls.Add(this.nIMTextBox);
@@ -336,6 +351,7 @@ namespace ExePABD
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingNavigator)).EndInit();
             this.mahasiswaBindingNavigator.ResumeLayout(false);
             this.mahasiswaBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,5 +382,6 @@ namespace ExePABD
         private System.Windows.Forms.TextBox sexTextBox;
         private System.Windows.Forms.TextBox phoneMhsTextBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
