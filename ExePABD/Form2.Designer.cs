@@ -63,20 +63,20 @@ namespace ExePABD
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.label1.Location = new System.Drawing.Point(22, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 26);
+            this.label1.Size = new System.Drawing.Size(132, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "DataGridView";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.label2.Location = new System.Drawing.Point(212, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 26);
+            this.label2.Size = new System.Drawing.Size(150, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "DataNavigation";
             // 
@@ -84,9 +84,9 @@ namespace ExePABD
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(163, 302);
+            this.button3.Location = new System.Drawing.Point(174, 308);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(44, 39);
+            this.button3.Size = new System.Drawing.Size(34, 33);
             this.button3.TabIndex = 4;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -94,10 +94,10 @@ namespace ExePABD
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 9);
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(23, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(357, 63);
+            this.label3.Size = new System.Drawing.Size(332, 65);
             this.label3.TabIndex = 5;
             this.label3.Text = "MAIN MENU ";
             // 
@@ -113,6 +113,7 @@ namespace ExePABD
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);

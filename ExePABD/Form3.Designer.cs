@@ -60,6 +60,7 @@ namespace ExePABD
             this.phoneMhsTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             nIMLabel = new System.Windows.Forms.Label();
             namaMhsLabel = new System.Windows.Forms.Label();
             alamatMhsLabel = new System.Windows.Forms.Label();
@@ -319,11 +320,21 @@ namespace ExePABD
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 141);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 124);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 72);
+            this.pictureBox1.Size = new System.Drawing.Size(96, 111);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(102, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 28);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Data Mahasiswa";
             // 
             // Form3
             // 
@@ -331,6 +342,7 @@ namespace ExePABD
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(382, 353);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(nIMLabel);
@@ -344,6 +356,7 @@ namespace ExePABD
             this.Controls.Add(phoneMhsLabel);
             this.Controls.Add(this.phoneMhsTextBox);
             this.Controls.Add(this.mahasiswaBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -384,5 +397,6 @@ namespace ExePABD
         private System.Windows.Forms.TextBox phoneMhsTextBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

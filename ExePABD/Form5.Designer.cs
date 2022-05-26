@@ -156,9 +156,10 @@ namespace ExePABD
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(136, 7);
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(99, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 17);
+            this.label1.Size = new System.Drawing.Size(152, 28);
             this.label1.TabIndex = 29;
             this.label1.Text = "Data Mahasiswa";
             // 
@@ -181,6 +182,7 @@ namespace ExePABD
             this.Controls.Add(alamatMhsLabel);
             this.Controls.Add(sexLabel);
             this.Controls.Add(phoneMhsLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
             this.Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
