@@ -75,7 +75,7 @@ namespace ExePABD
             // nIMLabel
             // 
             nIMLabel.AutoSize = true;
-            nIMLabel.Location = new System.Drawing.Point(276, 119);
+            nIMLabel.Location = new System.Drawing.Point(137, 116);
             nIMLabel.Name = "nIMLabel";
             nIMLabel.Size = new System.Drawing.Size(36, 17);
             nIMLabel.TabIndex = 1;
@@ -84,7 +84,7 @@ namespace ExePABD
             // namaMhsLabel
             // 
             namaMhsLabel.AutoSize = true;
-            namaMhsLabel.Location = new System.Drawing.Point(276, 147);
+            namaMhsLabel.Location = new System.Drawing.Point(137, 144);
             namaMhsLabel.Name = "namaMhsLabel";
             namaMhsLabel.Size = new System.Drawing.Size(79, 17);
             namaMhsLabel.TabIndex = 3;
@@ -93,7 +93,7 @@ namespace ExePABD
             // alamatMhsLabel
             // 
             alamatMhsLabel.AutoSize = true;
-            alamatMhsLabel.Location = new System.Drawing.Point(276, 175);
+            alamatMhsLabel.Location = new System.Drawing.Point(137, 172);
             alamatMhsLabel.Name = "alamatMhsLabel";
             alamatMhsLabel.Size = new System.Drawing.Size(85, 17);
             alamatMhsLabel.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace ExePABD
             // sexLabel
             // 
             sexLabel.AutoSize = true;
-            sexLabel.Location = new System.Drawing.Point(276, 203);
+            sexLabel.Location = new System.Drawing.Point(137, 200);
             sexLabel.Name = "sexLabel";
             sexLabel.Size = new System.Drawing.Size(35, 17);
             sexLabel.TabIndex = 7;
@@ -111,7 +111,7 @@ namespace ExePABD
             // phoneMhsLabel
             // 
             phoneMhsLabel.AutoSize = true;
-            phoneMhsLabel.Location = new System.Drawing.Point(276, 231);
+            phoneMhsLabel.Location = new System.Drawing.Point(137, 228);
             phoneMhsLabel.Name = "phoneMhsLabel";
             phoneMhsLabel.Size = new System.Drawing.Size(83, 17);
             phoneMhsLabel.TabIndex = 9;
@@ -164,7 +164,7 @@ namespace ExePABD
             this.mahasiswaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.mahasiswaBindingNavigator.Name = "mahasiswaBindingNavigator";
             this.mahasiswaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.mahasiswaBindingNavigator.Size = new System.Drawing.Size(800, 27);
+            this.mahasiswaBindingNavigator.Size = new System.Drawing.Size(382, 27);
             this.mahasiswaBindingNavigator.TabIndex = 0;
             this.mahasiswaBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -266,50 +266,51 @@ namespace ExePABD
             // nIMTextBox
             // 
             this.nIMTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "NIM", true));
-            this.nIMTextBox.Location = new System.Drawing.Point(367, 116);
+            this.nIMTextBox.Location = new System.Drawing.Point(228, 113);
             this.nIMTextBox.Name = "nIMTextBox";
-            this.nIMTextBox.Size = new System.Drawing.Size(100, 22);
+            this.nIMTextBox.Size = new System.Drawing.Size(142, 22);
             this.nIMTextBox.TabIndex = 2;
+            this.nIMTextBox.TextChanged += new System.EventHandler(this.nIMTextBox_TextChanged);
             // 
             // namaMhsTextBox
             // 
             this.namaMhsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "NamaMhs", true));
-            this.namaMhsTextBox.Location = new System.Drawing.Point(367, 144);
+            this.namaMhsTextBox.Location = new System.Drawing.Point(228, 141);
             this.namaMhsTextBox.Name = "namaMhsTextBox";
-            this.namaMhsTextBox.Size = new System.Drawing.Size(100, 22);
+            this.namaMhsTextBox.Size = new System.Drawing.Size(142, 22);
             this.namaMhsTextBox.TabIndex = 4;
             // 
             // alamatMhsTextBox
             // 
             this.alamatMhsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "AlamatMhs", true));
-            this.alamatMhsTextBox.Location = new System.Drawing.Point(367, 172);
+            this.alamatMhsTextBox.Location = new System.Drawing.Point(228, 169);
             this.alamatMhsTextBox.Name = "alamatMhsTextBox";
-            this.alamatMhsTextBox.Size = new System.Drawing.Size(100, 22);
+            this.alamatMhsTextBox.Size = new System.Drawing.Size(142, 22);
             this.alamatMhsTextBox.TabIndex = 6;
             // 
             // sexTextBox
             // 
             this.sexTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "Sex", true));
-            this.sexTextBox.Location = new System.Drawing.Point(367, 200);
+            this.sexTextBox.Location = new System.Drawing.Point(228, 197);
             this.sexTextBox.Name = "sexTextBox";
-            this.sexTextBox.Size = new System.Drawing.Size(100, 22);
+            this.sexTextBox.Size = new System.Drawing.Size(142, 22);
             this.sexTextBox.TabIndex = 8;
             // 
             // phoneMhsTextBox
             // 
             this.phoneMhsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "PhoneMhs", true));
-            this.phoneMhsTextBox.Location = new System.Drawing.Point(367, 228);
+            this.phoneMhsTextBox.Location = new System.Drawing.Point(228, 225);
             this.phoneMhsTextBox.Name = "phoneMhsTextBox";
-            this.phoneMhsTextBox.Size = new System.Drawing.Size(100, 22);
+            this.phoneMhsTextBox.Size = new System.Drawing.Size(142, 22);
             this.phoneMhsTextBox.TabIndex = 10;
             // 
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(708, 368);
+            this.button1.Location = new System.Drawing.Point(12, 305);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 70);
+            this.button1.Size = new System.Drawing.Size(36, 36);
             this.button1.TabIndex = 11;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -318,7 +319,7 @@ namespace ExePABD
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(126, 66);
+            this.pictureBox1.Location = new System.Drawing.Point(38, 141);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(71, 72);
             this.pictureBox1.TabIndex = 12;
@@ -329,7 +330,7 @@ namespace ExePABD
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(382, 353);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(nIMLabel);

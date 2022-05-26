@@ -38,5 +38,10 @@ namespace ExePABD
             Form2 f2 = new Form2();
             f2.Show();
         }
+
+        private void nIMTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -36,23 +36,25 @@ namespace ExePABD
             System.Windows.Forms.Label phoneMhsLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBoxNIM = new System.Windows.Forms.TextBox();
             this.textBoxNamaMhs = new System.Windows.Forms.TextBox();
             this.textBoxAlamat = new System.Windows.Forms.TextBox();
             this.textBoxGender = new System.Windows.Forms.TextBox();
             this.textBoxNoTelp = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             nIMLabel = new System.Windows.Forms.Label();
             namaMhsLabel = new System.Windows.Forms.Label();
             alamatMhsLabel = new System.Windows.Forms.Label();
             sexLabel = new System.Windows.Forms.Label();
             phoneMhsLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // nIMLabel
             // 
             nIMLabel.AutoSize = true;
-            nIMLabel.Location = new System.Drawing.Point(277, 97);
+            nIMLabel.Location = new System.Drawing.Point(147, 74);
             nIMLabel.Name = "nIMLabel";
             nIMLabel.Size = new System.Drawing.Size(36, 17);
             nIMLabel.TabIndex = 11;
@@ -61,7 +63,7 @@ namespace ExePABD
             // namaMhsLabel
             // 
             namaMhsLabel.AutoSize = true;
-            namaMhsLabel.Location = new System.Drawing.Point(277, 125);
+            namaMhsLabel.Location = new System.Drawing.Point(147, 102);
             namaMhsLabel.Name = "namaMhsLabel";
             namaMhsLabel.Size = new System.Drawing.Size(79, 17);
             namaMhsLabel.TabIndex = 13;
@@ -70,7 +72,7 @@ namespace ExePABD
             // alamatMhsLabel
             // 
             alamatMhsLabel.AutoSize = true;
-            alamatMhsLabel.Location = new System.Drawing.Point(277, 153);
+            alamatMhsLabel.Location = new System.Drawing.Point(147, 130);
             alamatMhsLabel.Name = "alamatMhsLabel";
             alamatMhsLabel.Size = new System.Drawing.Size(85, 17);
             alamatMhsLabel.TabIndex = 15;
@@ -79,7 +81,7 @@ namespace ExePABD
             // sexLabel
             // 
             sexLabel.AutoSize = true;
-            sexLabel.Location = new System.Drawing.Point(277, 181);
+            sexLabel.Location = new System.Drawing.Point(147, 158);
             sexLabel.Name = "sexLabel";
             sexLabel.Size = new System.Drawing.Size(35, 17);
             sexLabel.TabIndex = 17;
@@ -88,7 +90,7 @@ namespace ExePABD
             // phoneMhsLabel
             // 
             phoneMhsLabel.AutoSize = true;
-            phoneMhsLabel.Location = new System.Drawing.Point(277, 209);
+            phoneMhsLabel.Location = new System.Drawing.Point(147, 186);
             phoneMhsLabel.Name = "phoneMhsLabel";
             phoneMhsLabel.Size = new System.Drawing.Size(83, 17);
             phoneMhsLabel.TabIndex = 19;
@@ -99,67 +101,80 @@ namespace ExePABD
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(708, 368);
+            this.button1.Location = new System.Drawing.Point(12, 303);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 70);
+            this.button1.Size = new System.Drawing.Size(36, 36);
             this.button1.TabIndex = 21;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 22;
-            // 
             // textBoxNIM
             // 
-            this.textBoxNIM.Location = new System.Drawing.Point(396, 91);
+            this.textBoxNIM.Location = new System.Drawing.Point(232, 71);
             this.textBoxNIM.Name = "textBoxNIM";
-            this.textBoxNIM.Size = new System.Drawing.Size(100, 22);
+            this.textBoxNIM.Size = new System.Drawing.Size(138, 22);
             this.textBoxNIM.TabIndex = 23;
             // 
             // textBoxNamaMhs
             // 
-            this.textBoxNamaMhs.Location = new System.Drawing.Point(396, 122);
+            this.textBoxNamaMhs.Location = new System.Drawing.Point(232, 101);
             this.textBoxNamaMhs.Name = "textBoxNamaMhs";
-            this.textBoxNamaMhs.Size = new System.Drawing.Size(100, 22);
+            this.textBoxNamaMhs.Size = new System.Drawing.Size(138, 22);
             this.textBoxNamaMhs.TabIndex = 24;
             // 
             // textBoxAlamat
             // 
-            this.textBoxAlamat.Location = new System.Drawing.Point(396, 150);
+            this.textBoxAlamat.Location = new System.Drawing.Point(232, 128);
             this.textBoxAlamat.Name = "textBoxAlamat";
-            this.textBoxAlamat.Size = new System.Drawing.Size(100, 22);
+            this.textBoxAlamat.Size = new System.Drawing.Size(138, 22);
             this.textBoxAlamat.TabIndex = 25;
             // 
             // textBoxGender
             // 
-            this.textBoxGender.Location = new System.Drawing.Point(396, 181);
+            this.textBoxGender.Location = new System.Drawing.Point(232, 155);
             this.textBoxGender.Name = "textBoxGender";
-            this.textBoxGender.Size = new System.Drawing.Size(100, 22);
+            this.textBoxGender.Size = new System.Drawing.Size(138, 22);
             this.textBoxGender.TabIndex = 26;
             // 
             // textBoxNoTelp
             // 
-            this.textBoxNoTelp.Location = new System.Drawing.Point(396, 209);
+            this.textBoxNoTelp.Location = new System.Drawing.Point(232, 183);
             this.textBoxNoTelp.Name = "textBoxNoTelp";
-            this.textBoxNoTelp.Size = new System.Drawing.Size(100, 22);
+            this.textBoxNoTelp.Size = new System.Drawing.Size(138, 22);
             this.textBoxNoTelp.TabIndex = 27;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 74);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(96, 111);
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(136, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 17);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Data Mahasiswa";
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(382, 353);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxNoTelp);
             this.Controls.Add(this.textBoxGender);
             this.Controls.Add(this.textBoxAlamat);
             this.Controls.Add(this.textBoxNamaMhs);
             this.Controls.Add(this.textBoxNIM);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(nIMLabel);
             this.Controls.Add(namaMhsLabel);
@@ -168,6 +183,7 @@ namespace ExePABD
             this.Controls.Add(phoneMhsLabel);
             this.Name = "Form5";
             this.Text = "Form5";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,11 +191,12 @@ namespace ExePABD
 
         #endregion
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.TextBox textBoxNIM;
         public System.Windows.Forms.TextBox textBoxNamaMhs;
         public System.Windows.Forms.TextBox textBoxAlamat;
         public System.Windows.Forms.TextBox textBoxGender;
         public System.Windows.Forms.TextBox textBoxNoTelp;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
