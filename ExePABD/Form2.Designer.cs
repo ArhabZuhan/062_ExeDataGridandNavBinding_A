@@ -42,9 +42,9 @@ namespace ExePABD
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(22, 114);
+            this.button1.Location = new System.Drawing.Point(24, 114);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 137);
+            this.button1.Size = new System.Drawing.Size(130, 130);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -53,9 +53,9 @@ namespace ExePABD
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(217, 114);
+            this.button2.Location = new System.Drawing.Point(222, 115);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 137);
+            this.button2.Size = new System.Drawing.Size(130, 130);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -86,7 +86,7 @@ namespace ExePABD
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.Location = new System.Drawing.Point(174, 308);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 33);
+            this.button3.Size = new System.Drawing.Size(35, 35);
             this.button3.TabIndex = 4;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);

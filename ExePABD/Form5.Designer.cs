@@ -83,9 +83,9 @@ namespace ExePABD
             sexLabel.AutoSize = true;
             sexLabel.Location = new System.Drawing.Point(147, 158);
             sexLabel.Name = "sexLabel";
-            sexLabel.Size = new System.Drawing.Size(35, 17);
+            sexLabel.Size = new System.Drawing.Size(60, 17);
             sexLabel.TabIndex = 17;
-            sexLabel.Text = "Sex:";
+            sexLabel.Text = "Gender:";
             // 
             // phoneMhsLabel
             // 

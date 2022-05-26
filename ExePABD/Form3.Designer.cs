@@ -105,9 +105,9 @@ namespace ExePABD
             sexLabel.AutoSize = true;
             sexLabel.Location = new System.Drawing.Point(137, 200);
             sexLabel.Name = "sexLabel";
-            sexLabel.Size = new System.Drawing.Size(35, 17);
+            sexLabel.Size = new System.Drawing.Size(60, 17);
             sexLabel.TabIndex = 7;
-            sexLabel.Text = "Sex:";
+            sexLabel.Text = "Gender:";
             // 
             // phoneMhsLabel
             // 
@@ -165,7 +165,7 @@ namespace ExePABD
             this.mahasiswaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.mahasiswaBindingNavigator.Name = "mahasiswaBindingNavigator";
             this.mahasiswaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.mahasiswaBindingNavigator.Size = new System.Drawing.Size(382, 27);
+            this.mahasiswaBindingNavigator.Size = new System.Drawing.Size(382, 31);
             this.mahasiswaBindingNavigator.TabIndex = 0;
             this.mahasiswaBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -175,7 +175,7 @@ namespace ExePABD
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
