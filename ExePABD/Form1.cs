@@ -16,5 +16,24 @@ namespace ExePABD
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBoxUsername.Text == "admin" && textBoxPassword.Text == "admin123" && checkBox1.Checked)
+            {
+                this.Hide();
+                Form2 f2 = new Form2();
+                f2.Show();
+            }
+            else
+            {
+                MessageBox.Show("Username/Password Salah Ulangi lagii");
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

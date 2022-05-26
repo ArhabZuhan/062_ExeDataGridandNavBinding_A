@@ -34,11 +34,13 @@ namespace ExePABD
             System.Windows.Forms.Label alamatMhsLabel;
             System.Windows.Forms.Label sexLabel;
             System.Windows.Forms.Label phoneMhsLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.nIMTextBox = new System.Windows.Forms.TextBox();
             this.namaMhsTextBox = new System.Windows.Forms.TextBox();
             this.alamatMhsTextBox = new System.Windows.Forms.TextBox();
             this.sexTextBox = new System.Windows.Forms.TextBox();
             this.phoneMhsTextBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             nIMLabel = new System.Windows.Forms.Label();
             namaMhsLabel = new System.Windows.Forms.Label();
             alamatMhsLabel = new System.Windows.Forms.Label();
@@ -126,11 +128,22 @@ namespace ExePABD
             this.phoneMhsTextBox.Size = new System.Drawing.Size(100, 22);
             this.phoneMhsTextBox.TabIndex = 20;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Location = new System.Drawing.Point(708, 368);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 70);
+            this.button1.TabIndex = 21;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(nIMLabel);
             this.Controls.Add(this.nIMTextBox);
             this.Controls.Add(namaMhsLabel);
@@ -155,5 +168,6 @@ namespace ExePABD
         private System.Windows.Forms.TextBox alamatMhsTextBox;
         private System.Windows.Forms.TextBox sexTextBox;
         private System.Windows.Forms.TextBox phoneMhsTextBox;
+        private System.Windows.Forms.Button button1;
     }
 }
